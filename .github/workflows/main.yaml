@@ -3,8 +3,12 @@ on:
     branches:
       - main
 
+
+permissions:
+  contents: write
+
 jobs:
-  push-to-staging:
+  push-to-branch:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
